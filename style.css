@@ -39,11 +39,15 @@ li {
   text-transform: uppercase;
 }
 
+a {
+  color: inherit;
+}
+
 #logo {
   color: #FCA311;
   font-family: 'Amatic SC', cursive;
-  font-size: 32px;
-  padding: 0px 50px;
+  font-size: 35px;
+  padding: 0px 0px;
 }
 
 .cover-content {
@@ -139,7 +143,7 @@ a {
 	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
-	color:white;
+	color: white;
   font-family: 'Josefin Sans', sans-serif;
 	font-size:17px;
 	padding:10px 15px;
