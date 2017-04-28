@@ -38,6 +38,8 @@ h2 {
 
 h3 {
     font: normal 130% Arial, Helvetica, sans-serif;
+    border-left: 8px solid green;
+    border-bottom: 5px solid #e7e7e7;
 }
 
 h4, h5, h6 {
@@ -203,90 +205,42 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 #content {
-    width: 580px;
+    padding-left: 175px;
+    width: 500;
     margin-bottom: 20px;
     padding-top: 5px;
     float: left;
 }
 
 .content_item {
-    width: 580px;
+    width: 500px;
     margin-bottom: 20px;
 }
 
 .content_container {
-    width: 270px;
+    width: 500px;
     padding: 5px;
     margin-right: 10px;
     float: left;
 }
 
-#content_beige {
-    width: 920px;
-    height: 160px;
+.sidebar_container {
+    float: right;
+    width: 320px;
+    padding-right: 255px;
+}
+
+.sidebar {
     float: left;
-    text-align: center;
+    width: 320px;
+    margin-bottom: 10px;
 }
 
-#content_beige p {
-    color: #FFF;
+.sidebar_item {
+    font: normal 100% Arial, Helvetica, sans-serif;
+    width: 320px;
 }
 
-#content_beige h4 {
-    color: #2F291D;
-    text-shadow: 0px 1px 0px #FFF;
-}
-
-.content_beige_container_box {
-    width: 285px;
-    padding: 10px 5px 15px 5px;
-    text-align: center;
-    margin: 20px 20px 10px 0;
-    float: left;
-    background: #B29E74;
-    background: -moz-linear-gradient(#B29E74, #9D8759);
-    background: -o-linear-gradient(#B29E74, #9D8759);
-    background: -webkit-linear-gradient(#B29E74, #9D8759);
-    border-radius: 15px 15px 15px 15px;
-    -moz-border-radius: 15px 15px 15px 15px;
-    -webkit-border: 15px 15px 15px 15px;
-}
-
-.content_beige_container_boxl {
-    width: 280px;
-    padding: 10px 5px 15px 5px;
-    text-align: center;
-    margin: 20px 0 10px 0;
-    float: left;
-    background: #B29E74;
-    background: -moz-linear-gradient(#B29E74, #9D8759);
-    background: -o-linear-gradient(#B29E74, #9D8759);
-    background: -webkit-linear-gradient(#B29E74, #9D8759);
-    border-radius: 15px 15px 15px 15px;
-    -moz-border-radius: 15px 15px 15px 15px;
-    -webkit-border: 15px 15px 15px 15px;
-}
-
-#footer {
-    width: 960px;
-    height: 20px;
-    padding-top: 20px;
-    text-align: center;
-    background: transparent;
-    color: #2F291D;
-    text-shadow: 0px 1px 0px #FFF;
-}
-
-#footer a, #footer a:hover {
-    color: #2F291D;
-    text-shadow: 0px 1px 0px #FFF;
-    text-decoration: none;
-    padding-bottom: 20px;
-}
-
-#footer a:hover {
-    text-decoration: underline;
-}
 
 .readmore {
     font: bold 110% Arial, Helvetica, sans-serif;
