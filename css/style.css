@@ -433,9 +433,9 @@ ul#menu li.current a, ul#menu li:hover a {
     background-color: rgba(255, 255, 255, 0);
     overflow-y: auto;
     position: relative;
-    left: 0;
     top: 0;
     text-align: center;
+    margin: auto;
     width: 100%;
     z-index: 10000;
 }
