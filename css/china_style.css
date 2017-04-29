@@ -1,4 +1,4 @@
-html {
+500html {
     height: 100%;
 }
 
@@ -33,7 +33,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
+    width: 300px;
     font: normal 165% Arial, Helvetica, sans-serif;
+}
+
+.content_item h2 {
+  border-bottom: 5px solid DarkGreen;
+  width: 500px;
 }
 
 h3 {
@@ -171,19 +177,19 @@ ul#menu li.current a, ul#menu li:hover a {
 
 .sidebar_container {
     float: right;
-    width: 320px;
+    width: 120px;
     padding: 0;
 }
 
 .sidebar {
     float: left;
-    width: 320px;
+    width: 120px;
     margin-bottom: 10px;
 }
 
 .sidebar_item {
     font: normal 100% Arial, Helvetica, sans-serif;
-    width: 320px;
+    width: 120px;
 }
 
 .sidebar h2 {
@@ -192,7 +198,7 @@ ul#menu li.current a, ul#menu li:hover a {
     height: 30px;
     color: #2F291D;
     text-shadow: 0px 1px 0px #FFF;
-    background: #B29E74;
+    background: ForestGreen;
     background: -moz-linear-gradient(#B29E74, #9D8759);
     background: -o-linear-gradient(#B29E74, #9D8759);
     background: -webkit-linear-gradient(#B29E74, #9D8759);
@@ -202,6 +208,7 @@ ul#menu li.current a, ul#menu li:hover a {
     -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+    width:300px;
 }
 
 #content {
@@ -240,7 +247,6 @@ ul#menu li.current a, ul#menu li:hover a {
     font: normal 100% Arial, Helvetica, sans-serif;
     width: 320px;
 }
-
 
 .readmore {
     font: bold 110% Arial, Helvetica, sans-serif;
@@ -386,6 +392,10 @@ ul#menu li.current a, ul#menu li:hover a {
     z-index: 10000;
 }
 
+.navigation ul {
+  margin-right: 60px;
+}
+
 .nivoSlider {
     position: relative;
 }
@@ -529,4 +539,18 @@ a.nivo-nextNav {
     font-family: 'Amatic SC', cursive;
     font-size: 35px;
     padding: 0px 0px;
+}
+
+#banner_wrap {
+    position: relative;
+    width: 860px;
+    height: 60px;
+}
+
+#inner_element {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
 }
