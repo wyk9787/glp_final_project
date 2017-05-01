@@ -8,13 +8,13 @@ html {
 }
 
 body {
-  font: normal 85% Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   background: white;
   color: #000;
 }
 
 p {
-  padding: 0 0 10px 0;
+  padding: 0 0 0.8em 0;
   line-height: 1.7em;
   text-shadow: 0px 1px 0px #FFF;
   font-size: 100%
@@ -25,7 +25,6 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font: normal 175% Arial, Helvetica, sans-serif;
   color: #000;
   text-shadow: 0px 1px 0px #FFF;
   letter-spacing: -1px;
@@ -33,27 +32,74 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font: normal 165% Arial, Helvetica, sans-serif;
   padding: 0.5em;
   border: 3px solid #ccc;
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
 }
 
 h3 {
-  font: normal 130% Arial, Helvetica, sans-serif;
+  position: relative;
+  padding: .7em 0;
+  font-size: 1.3em;
+}
+h3::before,
+h3::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 6px;
+  box-sizing: border-box;
+}
+h3::before {
+  top: 0;
+  border-top: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+h3::after {
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
-h4, h5, h6 {
-  margin: 0;
-  padding: 0 0 0px 0;
-  font: normal 150% Arial, Helvetica, sans-serif;
-  line-height: 1.5em;
+h4 {
+  position: relative;
+  padding: .25em 0 .5em .75em;
+  border-left: 6px solid #3498db;
+}
+h4::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 0;
+  border-bottom: 3px solid #ccc;
 }
 
-h5, h6 {
-  font: normal 95% Arial, Helvetica, sans-serif;
-  color: #888;
-  padding-bottom: 15px;
+h5 {
+  position: relative;
+  padding: 1em 4em 1em 1em;
+  -webkit-background: linear-gradient(-155deg, rgba(0, 0, 0, 0) 1.5em, #f6f6f6 0%);
+  background: linear-gradient(-155deg, rgba(0, 0, 0, 0) 1.5em, #f6f6f6 0%);
+  border-radius: 6px;
+  font-size: 1.1em;
+}
+h5::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 1.65507em;
+  height: 3.5493em;
+  background: -webkit-linear-gradient(to left bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .2));
+  background: linear-gradient(to left bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .2));
+  border-bottom-left-radius: 6px;
+  box-shadow: -.2em .2em .3em -.1em rgba(0, 0, 0, .15);
+  -webkit-transform: translateY(-1.89424em) rotate(-40deg);
+  transform: translateY(-1.89424em) rotate(-40deg);
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
 }
 
 a {
@@ -95,6 +141,11 @@ table {
 
 #main {
   background: transparent;
+}
+
+.center{
+  width: 100%;
+  text-align: center;
 }
 
 /* Navigaton bar starts from here */
@@ -161,18 +212,22 @@ a.navi {
 /* Table starts from here */
 #box {
   margin: auto;
-  width: 50em;
-  @media all and (max-width: 52em) {
-    width: 100%;
-  }
+  width: 100%;
   height: 100%;
   white-space: nowrap;
 }
+@media all and (max-width: 52em) {
+  #box {
+    width: 100%;
+  }
+}
+
 #center {
   vertical-align: middle;
   display: inline-block;
   white-space: normal;
 }
+
 #box:after {
   content: "";
   width: 1px;
@@ -184,28 +239,44 @@ a.navi {
 
 table {
   background-color: white;
-  padding: 1em;
-  &, * {
-    border-color: green !important;
-  }
-  th {
-    text-transform: uppercase;
-    font-weight: 300;
-    text-align: center;
-    color: white;
-    background-color: green;
-    position: relative;
-    &:after {
-      content: "";
-      display: block;
-      height: 5px;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background-color: #16a085;
-      position: absolute;
-    }
-  }
+  margin: 20px 0px 20px 0px;
+  border-collapse: collapse;
+}
+table, table * {
+  border-color: #27ae60 !important;
+}
+table th {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 150%;
+  text-align: center;
+  color: white;
+  background-color: #27ae60;
+  position: relative;
+  padding-bottom 6px;
+  width: 230px;
+}
+table th:after {
+  content: "";
+  display: block;
+  height: 5px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #16a085;
+  position: absolute;
+}
+table tr {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-color: green;
+}
+table td {
+  padding: 20px 5px 20px 5px;
+  border-right-style: dashed;
+  border-left-style: dashed;
+  border-right-width: 2px;
+  border-left-width: 2px;
 }
 /* Table ends here */
 
@@ -231,7 +302,6 @@ table {
 }
 
 #welcome h1 a {
-  font: normal 150% Arial, Helvetica, sans-serif;
   letter-spacing: -3px;
   color: #FFF;
   text-decoration: none;
@@ -258,7 +328,6 @@ ul#menu li {
 
 ul#menu li a {
   float: left;
-  font: bold 120% Arial, Helvetica, sans-serif;
   text-align: center;
   color: #FFF;
   text-decoration: none;
@@ -293,13 +362,11 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 .sidebar_item {
-  font: normal 100% Arial, Helvetica, sans-serif;
   width: 320px;
 }
 
 .sidebar h2 {
   padding: 5px 0 0 10px;
-  font: normal 140% Arial, Helvetica, sans-serif;
   height: 30px;
   color: #2F291D;
   text-shadow: 0px 1px 0px #FFF;
@@ -403,7 +470,6 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 .readmore {
-  font: bold 110% Arial, Helvetica, sans-serif;
   height: 15px;
   margin-left: 95px;
   width: 90px;
@@ -427,7 +493,6 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 .button_small {
-  font: normal 110% Arial, Helvetica, sans-serif;
   height: 15px;
   width: 90px;
   padding: 5px 5px 10px 7px;
@@ -466,7 +531,6 @@ ul#menu li.current a, ul#menu li:hover a {
 .form_settings input, .form_settings textarea {
   padding: 2px;
   width: 299px;
-  font: 100% arial;
   border: 1px solid #BBB;
   background: #FFF;
   color: #47433F;
@@ -475,7 +539,6 @@ ul#menu li.current a, ul#menu li:hover a {
 .form_settings input[type="checkbox"] {
   padding: 2px 0;
   width: 15px;
-  font: 100% arial;
   border: 0;
   background: #FFF;
   color: #47433F;
@@ -483,7 +546,6 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 .form_settings .submit {
-  font: bold 100% arial;
   width: 99px;
   margin: 0 0 0 206px;
   height: 26px;
@@ -575,7 +637,6 @@ ul#menu li.current a, ul#menu li:hover a {
   background: none repeat scroll 0 0 #000000;
   bottom: 0;
   color: #FFFFFF;
-  font-family: arial;
   left: 0;
   opacity: 0.8;
   position: absolute;
