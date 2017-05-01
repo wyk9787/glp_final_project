@@ -203,8 +203,16 @@ ul#menu li.current a, ul#menu li:hover a {
     float: left;
 }
 
+#content.japan {
+    width: 920px;
+}
+
 .content_item {
     width: 580px;
+    margin-bottom: 20px;
+}
+.content_item_japan{
+    width: 920px;
     margin-bottom: 20px;
 }
 
