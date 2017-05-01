@@ -6,7 +6,6 @@ body {
 
 #cover {
     height: 900px;
-    position: relative;
     top: -55px;
     width: 100%;
     background: url("../images/background.jpg") no-repeat center bottom;
@@ -16,9 +15,9 @@ body {
 }
 
 .navigation {
-    overflow-y: auto;
+    overflow-y: hidden;
     position: fixed;
-    background-color: rgba(240, 230, 255, 0.3);
+    background-color: rgba(240, 230, 255, 0.0);
     left: 0;
     top: 0;
     text-align: center;
@@ -46,12 +45,11 @@ a {
 }
 
 #logo {
-    color: rgb(232, 147, 9);
+    color: rgb(255, 196, 0);
     font-family: 'Amatic SC', cursive;
-    font-size: 45px;
+    font-size: 56px;
     font-weight: bold;
     padding: 0px 0px;
-
 }
 
 .cover-content {
@@ -136,26 +134,40 @@ p {
 }
 
 #myButton {
-    background-color: rgba(0, 0, 0, 0);
     -moz-border-radius: 28px;
     -webkit-border-radius: 28px;
-    border-radius: 28px;
-    border: 1px solid #18ab29;
+    border: none;
     display: inline-block;
     cursor: pointer;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 17px;
+    color: rgb(251, 123, 80);
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 28px;
     padding: 10px 15px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #2f6627;
 }
 
 #myButton:hover {
-    background-color: #5cbf2a;
+    background-color: #fcda69;
 }
 
 #myButton:active {
     position: relative;
     top: 1px;
+}
+
+.video {
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+.buttom_page h2 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    border-left: 8px solid orange;
+    border-right: 8px solid orange;
+    border-bottom: 5px double rgb(250, 195, 30);
+    width: 200px;
+    position: relative;
+    left: 550px;
 }
