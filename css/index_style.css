@@ -6,7 +6,8 @@ body {
 
 #cover {
     height: 900px;
-    top: -55px;
+    padding-top: 0;
+    top: 0;
     width: 100%;
     background: url("../images/background.jpg") no-repeat center bottom;
     background-size: cover;
@@ -22,6 +23,7 @@ body {
     top: 0;
     text-align: center;
     width: 100%;
+    float: none;
     z-index: 10000;
 }
 
@@ -159,7 +161,8 @@ p {
 .video {
     position: relative;
     top: 10px;
-    text-align: center;
+    text-align: right;
+    padding-right: 40px;
 }
 
 .buttom_page h2 {
@@ -169,5 +172,6 @@ p {
     border-bottom: 5px double rgb(250, 195, 30);
     width: 200px;
     position: relative;
-    left: 550px;
+    left: 70%;
+    /*text-align: center;*/
 }
