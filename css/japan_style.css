@@ -32,19 +32,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
 }
 
-h2 {
+h1 {
   padding: 0.5em;
   border: 3px solid #ccc;
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
 }
 
-h3 {
+h2 {
   position: relative;
   padding: .7em 0;
   font-size: 1.3em;
 }
-h3::before,
-h3::after {
+h2::before,
+h2::after {
   position: absolute;
   left: 0;
   content: '';
@@ -52,23 +52,23 @@ h3::after {
   height: 6px;
   box-sizing: border-box;
 }
-h3::before {
+h2::before {
   top: 0;
   border-top: 2px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-h3::after {
+h2::after {
   bottom: 0;
   border-top: 1px solid #ccc;
   border-bottom: 2px solid #ccc;
 }
 
-h4 {
+h3 {
   position: relative;
   padding: .25em 0 .5em .75em;
   border-left: 6px solid #3498db;
 }
-h4::after {
+h3::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -78,7 +78,7 @@ h4::after {
   border-bottom: 3px solid #ccc;
 }
 
-h5 {
+h4 {
   position: relative;
   padding: 1em 4em 1em 1em;
   -webkit-background: linear-gradient(-155deg, rgba(0, 0, 0, 0) 1.5em, #f6f6f6 0%);
@@ -86,7 +86,7 @@ h5 {
   border-radius: 6px;
   font-size: 1.1em;
 }
-h5::after {
+h4::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -289,6 +289,7 @@ table td {
   border: 2px solid #333;
   color: #fff;
   line-height: 50px;
+  padding: 0.5em;
 }
 .button:hover {
   background-color: #fff;
@@ -348,7 +349,7 @@ table td {
 }
 
 .content_container {
-  width: 270px;
+  width: 440px;
   padding: 5px;
   margin-right: 10px;
   float: left;
