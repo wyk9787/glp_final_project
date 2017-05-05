@@ -530,16 +530,15 @@ a.nivo-nextNav {
 }
 
 #myButton {
-    <<<<<<< HEAD background-color: rgb(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0, 0);
     -moz-border-radius: 28px;
     -webkit-border-radius: 28px;
-    border-radius: 28px;
-    border: 1px solid #18ab29;
+    border: none;
     display: inline-block;
     cursor: pointer;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 17px;
+    color: rgb(251, 123, 80);
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 20px;
     padding: 10px 15px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #2f6627;
@@ -599,4 +598,9 @@ a.nivo-nextNav {
 #second_video {
     position: relative;
     top: 100px;
+}
+
+#second_video {
+  position: relative;
+  top: 100px;
 }
