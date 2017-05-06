@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Josefin+Sans|Lato|Love+Ya+Like+A+Sister');
 html {
   height: 100%;
 }
@@ -28,7 +28,6 @@ img {
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   text-shadow: 0px 1px 0px #FFF;
-  letter-spacing: -1px;
   margin: 0 0 10px 0;
 }
 
@@ -68,6 +67,7 @@ h3 {
   padding: .25em 0 .5em .75em;
   border-left: 6px solid #3498db;
 }
+
 h3::after {
   position: absolute;
   left: 0;
@@ -103,19 +103,6 @@ h4::after {
   transform-origin: bottom right;
 }
 
-a {
-  /*color: #2F291D;
-  text-shadow: 0px 1px 0px #FFF;
-  font-weight: bold;
-  background: transparent;
-  outline: none;
-  text-decoration: underline;*/
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 ul {
   margin: 2px 0 22px 30px;
   line-height: 1.7em;
@@ -135,7 +122,7 @@ table {
   border: 10px;
 }
 
-#main, #header, #banner, #menubar, #site_content, #footer, #content_beige {
+#main, #banner, #menubar, #site_content {
   margin-left: auto;
   margin-right: auto;
 }
@@ -165,48 +152,71 @@ li.navi {
 }
 
 a.navi {
+  text-decoration: none;
   color: inherit;
 }
 
 .navigation {
-  background-color: rgba(186, 145, 50, 0.8);
-  /*overflow-y: auto;
-  position: fixed;*/
-left: 0;
-top: 0;
-text-align: center;
-width: 100%;
-z-index: 10000;
+    overflow-y: hidden;
+    background-color: rgba(240, 230, 255, 0.0);
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    float: none;
+    z-index: 10000;
+    height: 70px;
+    padding-top: 10px;
+}
+.navigation ul {
+    margin-right: 60px;
 }
 
 #logo {
-  color: #FCA311;
-  font-family: 'Amatic SC', cursive;
-  font-size: 35px;
-  padding: 0px 0px;
+    color: rgb(255, 196, 0);
+    font-family: 'Amatic SC', cursive;
+    font-size: 56px;
+    font-weight: bold;
+    padding: 0px 0px;
 }
 
 #myButton {
-  background-color:rgb(0,0,0,0);
-  -moz-border-radius:28px;
-  -webkit-border-radius:28px;
-  border-radius:28px;
-  border:1px solid #18ab29;
-  display:inline-block;
-  cursor:pointer;
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size:17px;
-  padding:10px 15px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #2f6627;
+    background-color: rgb(0, 0, 0, 0);
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(251, 123, 80);
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
 }
+
 #myButton:hover {
-  background-color:#5cbf2a;
+    background-color: #5cbf2a;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(251, 123, 80);
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
 }
+
+#myButton:hover {
+    background-color: #fcda69;
+}
+
 #myButton:active {
-  position:relative;
-  top:1px;
+    position: relative;
+    top: 1px;
 }
 /* Navigation bar ends */
 
@@ -351,6 +361,14 @@ table td {
 .content_container {
   width: 440px;
   padding: 5px;
+  margin-right: 10px;
+  float: left;
+}
+
+.content_container_full {
+  width: 920px;
+  padding: 5px;
+  margin-top: 2em;
   margin-right: 10px;
   float: left;
 }
