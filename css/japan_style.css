@@ -519,3 +519,16 @@ a.nivo-nextNav {
   background-position: 0 -22px;
 }
 /* Slider ends here */
+
+#footer {
+  text-align: center;
+  width: 920px;
+  height: 100px;
+  margin: 5px auto 0 auto;
+  padding-top: 10px;
+  border-top: solid 1px;
+}
+
+#footer p {
+  padding: 0;
+}
