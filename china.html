@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.min.js"></script>
@@ -22,19 +23,19 @@
 </head>
 
 <body>
-    <div id="main">
-        <div class="navigation">
-            <ul>
-                <li id="myButton"><a href="index.html">Home</a></li>
-                <li id="myButton"><a href="comparison.html">Comparison</a></li>
-                <li id="myButton"><a href="china.html">China</a></li>
-                <li id="logo"><a href="index.html">GLP Tea Culture</li>
-                <li id="myButton"><a href="russia.html">Russia</a></li>
-                <li id="myButton"><a href="japan.html">Japan</a></li>
-                <li id="myButton"><a href="britain.html">Britain</a></li>
-            </ul>
-        </div>
 
+    <div class="navigation">
+        <ul>
+            <li id="myButton"><a href="index.html">Home</a></li>
+            <li id="myButton"><a href="comparison.html">Comparison</a></li>
+            <li id="myButton"><a href="china.html">China</a></li>
+            <li id="logo"><a href="index.html">GLP Tea Culture</li>
+                <li id="myButton"><a href="russia.html">Russia</a></li>
+            <li id="myButton"><a href="japan.html">Japan</a></li>
+            <li id="myButton"><a href="britain.html">Britain</a></li>
+        </ul>
+    </div>
+    <div id="main">
         <div id="site_content">
             <div id="banner_image">
                 <div id="slider-wrapper">
@@ -60,15 +61,62 @@
                     </div>
                 </div>
                 <div class="sidebar_item">
-                    <h2>Tea Types</h2>
+                    <h2>Popular Chinese Tea</h2>
                     <div id="table">
-                      
+                        <table id="type">
+                            <tbody>
+                                <tr>
+                                    <th>Green</th>
+                                    <td>Dragon Well <br>(龙井)</td>
+                                    <td>Maofeng (毛峰)</td>
+                                    <td>Guapian (瓜片)</td>
+                                </tr>
+                                <tr>
+                                    <th>Black</th>
+                                    <td>Xiaozhong (小种)</td>
+                                    <td>Jinjunmei (金骏眉)</td>
+                                    <td>Kungfu (功夫)</td>
+                                </tr>
+                                <tr>
+                                    <th>White</th>
+                                    <td>Yinzhen (银针)</td>
+                                    <td>White Poeny<br> (白牡丹)</td>
+                                    <td>Shoumei (寿眉)</td>
+                                </tr>
+                                <tr>
+                                    <th>Oolong</th>
+                                    <td>Tieguanyin (铁观音)</td>
+                                    <td>Dahongpao (大红袍)</td>
+                                    <td>Narcissus (水仙)</td>
+                                </tr>
+                                <tr>
+                                    <th>Yellow</th>
+                                    <td>Yinzhen (银针)</td>
+                                    <td>Huangya (黄芽)</td>
+                                    <td>Maojian (毛尖)</td>
+                                </tr>
+                                <tr>
+                                    <th>Dark</th>
+                                    <td>Puer<br> (普洱)</td>
+                                    <td>Sichuan Zang tea (四川藏茶)</td>
+                                    <td>Liubao<br> (六堡)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                     </div>
                 </div>
-                <div id="second_video">
-                    <iframe width="400" height="225" src="https://www.youtube.com/embed/B0XJ0Pp49lo" frameborder="0" allowfullscreen></iframe>
+
+                <!-- <div id="history">
+                  <img src="images/history.jpg" alt="History of Tea">
+                </div> -->
+                <div class="sidebar_item">
+                    <h2>Whisked Tea</h2>
+                    <div id="second_video">
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/B0XJ0Pp49lo" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <!--close sidebar_item-->
+                < <!--close sidebar_item-->
             </div>
             <!--close sidebar-->
         </div>
@@ -95,7 +143,7 @@
                     </p>
                 </div>
                 <div class="content_container">
-                    <h3>History of Chinese Tea Culture </h3>
+                    <h3>History of Chinese Tea Culture <a href="images/history.jpg" target="_blank">  <i>(Check the time table)</i></a></h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tea-drinking history is a part of over 5000-year Chinese history. Legend has it that Yan Emperor, one of the ancestor of the Chinese nation, personally tasted all kinds of herbs for their
                         medical value in order to relieve peoples’ sufferings. One day he encountered 72 poisonous herbs and it was the tea that saved his life. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No tea was grown in the north in the
                         Han Dynasty. So it was considered as a rarity by the royal family and officials. However, during Eastern Han, tea began to appear as a common commodity in the market. People from south of Yangzi River started to grow tea bushes.
@@ -115,7 +163,7 @@
             <!--close content_item-->
         </div>
         <!--close content-->
-
+    </div>
 
 </body>
 
