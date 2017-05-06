@@ -40,7 +40,9 @@ h2 {
 
 .content_item h2 {
     border-bottom: 5px solid DarkGreen;
-    width: 500px;
+    width: 480px;
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
 }
 
 h3 {
@@ -108,6 +110,9 @@ ol li {
 
 #main {
     background: transparent;
+    width: 1250px;
+    height: 2500px;
+    /*border: solid 5px;*/
 }
 
 #menubar {
@@ -191,21 +196,26 @@ ul#menu li.current a, ul#menu li:hover a {
     padding-bottom: 20px;
 }
 
-.sidebar_container {
+.container {
     float: right;
-    width: 120px;
-    padding: 0;
+    width: 700px;
+    /*padding: 0;*/
+    /*border: solid 2px green;*/
 }
 
 .sidebar {
-    float: left;
-    width: 120px;
+    /*float: left;*/
+    width: 600px;
     margin-bottom: 10px;
+    /*border: solid 2px red;*/
 }
 
 .sidebar_item {
+    position: relative;
     font: normal 100% Arial, Helvetica, sans-serif;
-    width: 120px;
+    width: 50%;
+    top:  30px;
+    /*border: solid 3px;*/
 }
 
 .sidebar h2 {
@@ -224,9 +234,9 @@ ul#menu li.current a, ul#menu li:hover a {
     -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-    width: 300px;
+    width: 400px;
     position: relative;
-    top: 35px;
+    top: 15px;
 }
 
 #content {
@@ -243,7 +253,7 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 .content_container {
-    width: 500px;
+    width: 470px;
     padding: 5px;
     margin-right: 10px;
     border-right: 2px dot;
@@ -259,12 +269,14 @@ ul#menu li.current a, ul#menu li:hover a {
 .sidebar {
     float: left;
     width: 320px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 
 .sidebar_item {
     font: normal 100% Arial, Helvetica, sans-serif;
     width: 320px;
+    position: relative;
+    margin-top: 30px;
 }
 
 .readmore {
@@ -592,15 +604,33 @@ a.nivo-nextNav {
 
 #first_video {
     position: relative;
-    top: 50px;
+    top: 20px;
 }
 
 #second_video {
     position: relative;
-    top: 100px;
+    top: 20px;
 }
 
-#second_video {
-  position: relative;
-  top: 100px;
+#table {
+    position: relative;
+    top: 20px;
+    margin-bottom: 550px;
+}
+
+#type th {
+    width: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(230, 255, 153, 0.8);
+    /*border: solid 2px;*/
+}
+
+#type td {
+    width: 50px;
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(230, 255, 153, 0.5);
+    /*border: solid 2px;*/
 }
