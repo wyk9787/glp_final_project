@@ -51,6 +51,11 @@ a {
     text-decoration: none;
 }
 
+a:active {
+  position:relative;
+  top: 1px;
+}
+
 #logo {
     color: rgb(255, 196, 0);
     font-family: 'Amatic SC', cursive;
@@ -64,7 +69,7 @@ a {
     margin: 0 auto;
     position: relative;
     text-align: center;
-    top: 280px;
+    top: 230px;
     width: 70%;
 }
 
@@ -75,6 +80,8 @@ h1 {
     line-height: 60px;
     padding: 20px 10px;
     text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -108,12 +115,18 @@ p {
 }
 
 .btn {
-    background-color: #14213D;
-    background-image: -webkit-linear-gradient(#FFD194, #BC1324);
-    color: #FFF;
+    background-color: rgba(0, 0, 0, 0);
+    /*background-image: -webkit-linear-gradient(#FFD194, #BC1324);*/
+    color: rgb(255, 153, 0);
     font-family: 'Amatic SC', cursive;
-    font-size: 26px;
+    font-size: 48px;
     padding: 14px;
+    position: relative;
+    top: 15px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 10px;
 }
 
 .products {
