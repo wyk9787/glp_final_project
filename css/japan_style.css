@@ -65,7 +65,7 @@ h2::after {
 h3 {
   position: relative;
   padding: .25em 0 .5em .75em;
-  border-left: 6px solid #3498db;
+  border-left: 6px solid green;
 }
 
 h3::after {

@@ -9,19 +9,17 @@ html, body {
 #cover {
 
     height: 950px;
-    padding-top: 5px;
     top: 0;
     width: 100%;
     background: url("../images/background.jpg") no-repeat center bottom;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0px 100px 0px 0px;
     border-bottom: solid 15px Black;
 }
 
 .navigation {
     overflow-y: hidden;
-    position: absolute;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.0);
     left: 0;
     top: 0;
