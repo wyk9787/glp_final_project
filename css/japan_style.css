@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Josefin+Sans|Lato|Love+Ya+Like+A+Sister');
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: white;
+  color: #000;
+}
+
+p {
+  padding: 0 0 0.8em 0;
+  line-height: 1.7em;
+  text-shadow: 0px 1px 0px #FFF;
+  font-size: 100%
+}
+
+img {
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  text-shadow: 0px 1px 0px #FFF;
+  margin: 0 0 10px 0;
+}
+
+h1 {
+  padding: 0.5em;
+  border: 3px solid #ccc;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
+
+h2 {
+  position: relative;
+  padding: .7em 0;
+  font-size: 1.3em;
+}
+h2::before,
+h2::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 6px;
+  box-sizing: border-box;
+}
+h2::before {
+  top: 0;
+  border-top: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+h2::after {
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+h3 {
+  position: relative;
+  padding: .25em 0 .5em .75em;
+  border-left: 6px solid green;
+}
+
+h3::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 0;
+  border-bottom: 3px solid #ccc;
+}
+
+h4 {
+  position: relative;
+  padding: 1em 4em 1em 1em;
+  -webkit-background: linear-gradient(-155deg, rgba(0, 0, 0, 0) 1.5em, #f6f6f6 0%);
+  background: linear-gradient(-155deg, rgba(0, 0, 0, 0) 1.5em, #f6f6f6 0%);
+  border-radius: 6px;
+  font-size: 1.1em;
+}
+h4::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 1.65507em;
+  height: 3.5493em;
+  background: -webkit-linear-gradient(to left bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .2));
+  background: linear-gradient(to left bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .2));
+  border-bottom-left-radius: 6px;
+  box-shadow: -.2em .2em .3em -.1em rgba(0, 0, 0, .15);
+  -webkit-transform: translateY(-1.89424em) rotate(-40deg);
+  transform: translateY(-1.89424em) rotate(-40deg);
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+
+ul {
+  margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;
+}
+
+ol {
+  margin: 8px 0 22px 20px;
+}
+
+ol li {
+  margin: 0 0 11px 0;
+}
+
+table {
+  border: 10px;
+}
+
+#main, #banner, #menubar, #site_content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main {
+  background: transparent;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+/* Navigaton bar starts from here */
+ul.navi {
+  padding: 0;
+}
+
+li.navi {
+  color: white;
+  display: inline-block;
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 16px 20px;
+  text-transform: uppercase;
+}
+
+a.navi {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation {
+    overflow-y: hidden;
+    background-color: rgba(240, 230, 255, 0.0);
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    float: none;
+    z-index: 10000;
+    height: 70px;
+    padding-top: 10px;
+}
+.navigation ul {
+    margin-right: 60px;
+}
+
+#logo {
+    color: rgb(255, 196, 0);
+    font-family: 'Amatic SC', cursive;
+    font-size: 56px;
+    font-weight: bold;
+    padding: 0px 0px;
+}
+
+#myButton {
+    background-color: rgb(0, 0, 0, 0);
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(251, 123, 80);
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+#myButton:hover {
+    background-color: #5cbf2a;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(251, 123, 80);
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+#myButton:hover {
+    background-color: #fcda69;
+}
+
+#myButton:active {
+    position: relative;
+    top: 1px;
+}
+/* Navigation bar ends */
+
+/* Table starts from here */
+#box {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+@media all and (max-width: 52em) {
+  #box {
+    width: 100%;
+  }
+}
+
+#center {
+  vertical-align: middle;
+  display: inline-block;
+  white-space: normal;
+}
+
+#box:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: -10px;
+}
+
+table {
+  background-color: white;
+  margin: 20px 0px 20px 0px;
+  border-collapse: collapse;
+}
+table, table * {
+  border-color: #27ae60 !important;
+}
+table th {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 150%;
+  text-align: center;
+  color: white;
+  background-color: #27ae60;
+  position: relative;
+  padding-bottom 6px;
+  width: 230px;
+}
+table th:after {
+  content: "";
+  display: block;
+  height: 5px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #16a085;
+  position: absolute;
+}
+table tr {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-color: green;
+}
+table td {
+  padding: 20px 5px 20px 5px;
+  border-right-style: dashed;
+  border-left-style: dashed;
+  border-right-width: 2px;
+  border-left-width: 2px;
+}
+/* Table ends here */
+
+/* Button starts here */
+.button {
+  position: relative;
+  z-index: 2;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  line-height: 50px;
+  padding: 0.5em;
+}
+.button:hover {
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+}
+.button::before,
+.button::after {
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #333;
+}
+.button::before {
+  top: 0;
+}
+.button::after {
+  bottom: 0;
+}
+.button:hover::before,
+.button:hover::after {
+  height: 0;
+  background-color: #59b1eb;
+}
+/* Button ends here */
+
+#menubar {
+  width: 920px;
+  height: 50px;
+  background: #B29E74;
+  background: -moz-linear-gradient(#B29E74, #9D8759);
+  background: -o-linear-gradient(#B29E74, #9D8759);
+  background: -webkit-linear-gradient(#B29E74, #9D8759);
+  border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -webkit-border: 0px 0px 15px 15px;
+}
+
+#site_content {
+  width: 920px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#content {
+  width: 920px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  float: left;
+}
+
+
+.content_item {
+  width: 920px;
+  margin-bottom: 20px;
+}
+
+.content_container {
+  width: 440px;
+  padding: 5px;
+  margin-right: 10px;
+  float: left;
+}
+
+.content_container_full {
+  width: 920px;
+  padding: 5px;
+  margin-top: 2em;
+  margin-right: 10px;
+  float: left;
+}
+
+/* Slider starts here */
+#banner_image {
+  width: 920px;
+  height: 430px;
+  float: left;
+  margin: 20px 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#slider-wrapper {
+  height: 400px;
+  background: transparent;
+  width: 920px;
+}
+
+#slider {
+  background: url("../images/loading.gif") no-repeat scroll 50% 50% transparent;
+  height: 400px;
+  position: relative;
+  width: 920px;
+}
+
+#slider img {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+#slider a {
+  border: 0 none;
+  display: block;
+}
+
+.nivoSlider {
+  position: relative;
+}
+
+.nivoSlider img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.nivoSlider a.nivo-imageLink {
+  border: 0 none;
+  display: none;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+}
+
+.nivo-slice {
+  display: block;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+}
+
+.nivo-caption {
+  background: none repeat scroll 0 0 #000000;
+  bottom: 0;
+  color: #FFFFFF;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 8;
+}
+
+.nivo-caption p {
+  margin: 0;
+  padding: 5px;
+}
+
+.nivo-caption a {
+  color: red;
+  display: inline !important;
+  text-decoration: none;
+}
+
+.nivo-caption a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.nivo-html-caption {
+  display: none;
+}
+
+.nivo-directionNav a {
+  background: url("../images/arrows.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  position: absolute;
+  text-indent: -9999px;
+  top: 45%;
+  width: 30px;
+  z-index: 9;
+}
+
+a.nivo-prevNav {
+  left: 15px;
+}
+
+a.nivo-nextNav {
+  background-position: -30px 50%;
+  right: 15px;
+}
+
+.nivo-controlNav {
+  bottom: -30px;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+}
+
+.nivo-controlNav a {
+  background: url("../images/bullets.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  float: left;
+  height: 22px;
+  margin-top: 350px;
+  position: relative;
+  text-indent: -9999px;
+  width: 22px;
+  z-index: 9;
+}
+
+.nivo-controlNav a.active {
+  background-position: 0 -22px;
+}
+/* Slider ends here */
+
+#footer {
+  text-align: center;
+  width: 920px;
+  height: 100px;
+  margin: 5px auto 0 auto;
+  padding-top: 10px;
+  border-top: solid 1px;
+}
+
+#footer p {
+  padding: 0;
+}
