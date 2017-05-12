@@ -1,18 +1,26 @@
 html, body {
-  width: 100%;
+  /*width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  overflow-x: hidden;*/
 }
 
-#cover {
-  height: 950px;
-  top: 0;
-  width: 100%;
+body {
   background: url("../images/background.jpg") no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cover1 {
+  height: 950px;
+  top: 0;
+  width: 100%;
   /*border-bottom: solid 25px rgb(255, 177, 27);*/
 }
 
@@ -27,6 +35,8 @@ html, body {
   float: none;
   z-index: 10000;
   margin-top: 0;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 ul {
@@ -149,15 +159,13 @@ p {
   top: 1px;
 }
 
-.video {
-  position: relative;
-  top: 10px;
-  padding-right: 40px;
-}
-
 .bottom_page {
-  height: 1000px;
-  background-color: rgb(232, 182, 71);
+  /*height: 1000px;*/
+  /*background-color: rgb(232, 182, 71);*/
+  position: absolute;
+  top: 1000px;
+  left: 0;
+  right: 0;
 }
 
 .bottom_page h2 {
@@ -171,6 +179,18 @@ p {
   /*text-align: center;*/
 }
 
+.content {
+  position: absolute;
+  top: 1000px;
+  height: 1000px;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Card starts here */
 .card {
   margin: 30px auto;
@@ -178,6 +198,8 @@ p {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .card-img {
@@ -187,14 +209,15 @@ p {
 }
 
 .card-content {
-  padding: 20px;
+  /*padding: 20px;*/
 }
 
 .card-title {
-  font-size: 20px;
-  margin-bottom: 20px;
+  /*font-size: 20px;*/
+  /*margin-bottom: 20px;*/
   text-align: center;
   color: #333;
+  margin: 20px 0;
 }
 
 .card-text {
@@ -220,7 +243,7 @@ p {
 }
 /* Card ends here */
 
-.video2 {
+.video {
   padding-top: 1em;
   text-align: center;
 }
