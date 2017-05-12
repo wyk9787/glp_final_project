@@ -1,27 +1,12 @@
-html, body {
-  /*width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;*/
-}
-
+@import url('https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Love+Ya+Like+A+Sister|Raleway');
 body {
   background: url("../images/background.jpg") no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-}
-
-#cover1 {
-  height: 950px;
-  top: 0;
-  width: 100%;
-  /*border-bottom: solid 25px rgb(255, 177, 27);*/
 }
 
 .navigation {
@@ -73,13 +58,15 @@ a:active {
 
 .cover-content {
   box-sizing: border-box;
-  margin: 0 auto;
-  position: relative;
+  margin: auto;
+  position: absolute;
   text-align: center;
-  top: 200px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   width: 70%;
-  /*justify-content: center;
-  align-items: center;*/
+  height: 120px;
 }
 
 h1 {
@@ -91,29 +78,6 @@ h1 {
   text-align: center;
   word-spacing: 20px;
   letter-spacing: 3px;
-}
-
-h2 {
-  color: #000;
-  font-family: 'Raleway', sans-serif;
-  font-size: 42px;
-  font-weight: 300;
-  text-align: center;
-}
-
-h3 {
-  color: #14213D;
-  font-family: 'Abel', sans-serif;
-  font-size: 28px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h4 {
-  color: #FCA311;
-  font-family: 'Abel', sans-serif;
-  font-size: 24px;
-  margin: 0px 0px 50px 0px;
 }
 
 p {
@@ -161,29 +125,9 @@ p {
   top: 1px;
 }
 
-.bottom_page {
-  /*height: 1000px;*/
-  /*background-color: rgb(232, 182, 71);*/
-  position: absolute;
-  top: 1000px;
-  left: 0;
-  right: 0;
-}
-
-.bottom_page h2 {
-  font-family: 'Love Ya Like A Sister', cursive;
-  border-left: 8px solid orange;
-  border-right: 8px solid orange;
-  border-bottom: 5px double rgb(250, 195, 30);
-  width: 200px;
-  position: relative;
-  /*left: 70%;*/
-  /*text-align: center;*/
-}
-
 .content {
   position: absolute;
-  top: 1000px;
+  top: 100vh;
   height: 500px;
   width: 90%;
   left: 0;
@@ -204,12 +148,6 @@ p {
   align-items: flex-start;
 }
 
-.card-img {
-  border-radius: 5px 5px 0 0;
-  max-width: 100%;
-  height: auto;
-}
-
 .card-content {
   /*padding: 20px;*/
 }
@@ -226,22 +164,6 @@ p {
   color: #777;
   font-size: 14px;
   line-height: 1.5;
-}
-
-.card-link {
-  text-align: center;
-  border-top: 1px solid #eee;
-  padding: 20px;
-}
-
-.card-link a {
-  text-decoration: none;
-  color: #0bd;
-  margin: 0 10px;
-}
-
-.card-link a:hover {
-  color: #0090aa;
 }
 /* Card ends here */
 
