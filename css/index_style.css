@@ -83,23 +83,8 @@ h1 {
 p {
   color: #333;
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
-}
-
-.btn {
-  background-color: rgba(0, 0, 0, 0);
-  /*background-image: -webkit-linear-gradient(#FFD194, #BC1324);*/
-  color: rgb(255, 153, 0);
-  font-family: 'Amatic SC', cursive;
-  font-size: 48px;
-  padding: 14px;
-  position: relative;
-  top: 15px;
-  font-weight: bold;
-  font-style: italic;
-  letter-spacing: 2px;
-  word-spacing: 10px;
 }
 
 #myButton {
@@ -140,34 +125,46 @@ p {
 /* Card starts here */
 .card {
   margin: 30px auto;
-  width: 550px;
+  width: 40%;
   background: Beige;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 5px 3px 5px #ccc;
   justify-content: center;
   align-items: flex-start;
 }
 
 .card-content {
-  /*padding: 20px;*/
+  padding: 20px;
 }
 
 .card-title {
-  /*font-size: 20px;*/
-  /*margin-bottom: 20px;*/
   text-align: center;
   color: #333;
-  margin: 20px 0;
+  margin: 0;
 }
 
-.card-text {
-  color: #777;
-  font-size: 14px;
-  line-height: 1.5;
-}
 /* Card ends here */
 
 .video {
+  position: relative;
   padding-top: 1em;
-  text-align: center;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+}
+
+.footer-space {
+  height: 15%;
+  width: 100%;
 }
