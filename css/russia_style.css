@@ -219,6 +219,7 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 #content {
+<<<<<<< Kohei
   width: 50%;
   float: right;
 }
@@ -393,10 +394,6 @@ ul#menu li.current a, ul#menu li:hover a {
   padding-top: 10px;
 }
 
-/*.navigation ul {
-  margin-right: 60px;
-}*/
-
 .nivoSlider {
   position: relative;
 }
@@ -510,7 +507,7 @@ a.nivo-nextNav {
   background-position: 0 -22px;
 }
 
-#n {
+#myButton {
   background-color: rgb(0, 0, 0, 0);
   -moz-border-radius: 28px;
   -webkit-border-radius: 28px;
@@ -525,8 +522,8 @@ a.nivo-nextNav {
   text-shadow: 0px 1px 0px #2f6627;
 }
 
-#myButton {
-  background-color: rgb(0, 0, 0, 0);
+#myButton:hover {
+  background-color: #fcda69;
   -moz-border-radius: 28px;
   -webkit-border-radius: 28px;
   border: none;
@@ -541,7 +538,6 @@ a.nivo-nextNav {
 }
 
 #myButton:hover {
-  background-color: #fcda69;
 }
 
 #myButton:active {
