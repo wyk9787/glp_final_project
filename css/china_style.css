@@ -40,7 +40,7 @@ h2 {
 
 .content_item h2 {
   border-bottom: 5px solid DarkGreen;
-  width: 480px;
+  width: 100%;
   font-family: 'Pacifico', cursive;
   font-size: 32px;
 }
@@ -111,8 +111,7 @@ ol li {
 #main {
   background: transparent;
   width: auto;
-  height: 2400px;
-  /*border: solid 5px;*/
+  overflow: hidden;
 }
 
 #menubar {
@@ -251,12 +250,12 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 .content_item {
-  width: 500px;
+  width: 90%;
   margin-bottom: 20px;
 }
 
 .content_container {
-  width: 470px;
+  width: 100%;
   padding: 5px;
   margin-right: 10px;
   border-right: 2px dot;
