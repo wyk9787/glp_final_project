@@ -171,7 +171,7 @@ a.navi {
     height: 70px;
 }
 .navigation ul {
-    margin-right: 60px;
+    /*margin-right: 60px;*/
 }
 
 #logo {
@@ -282,14 +282,16 @@ table td {
 .button {
   position: absolute;
   bottom: 0;
-  left: 40%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   z-index: 2;
   background-color: #333;
   border: 2px solid #333;
   color: #fff;
-  line-height: 50px;
-  padding: 0px 10px;
+  line-height: 2.3em;
   text-decoration: none;
+  width: 7em;
 }
 .button:hover {
   background-color: #fff;
@@ -351,7 +353,7 @@ table td {
 .content_container {
   position: relative;
   width: 440px;
-  height: 400px;
+  height: 20em;
   padding: 5px;
   margin-right: 10px;
   float: left;
