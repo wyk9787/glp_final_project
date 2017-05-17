@@ -215,7 +215,7 @@ ul#menu li.current a, ul#menu li:hover a {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   width: 100%;
   position: relative;
-  top: 40px;
+  top: 15px;
 }
 
 #content {
@@ -393,7 +393,6 @@ ul#menu li.current a, ul#menu li:hover a {
   padding-top: 10px;
 }
 
-
 /*.navigation ul {
   margin-right: 60px;
 }*/
@@ -511,6 +510,21 @@ a.nivo-nextNav {
   background-position: 0 -22px;
 }
 
+#n {
+  background-color: rgb(0, 0, 0, 0);
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(251, 123, 80);
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
 #myButton {
   background-color: rgb(0, 0, 0, 0);
   -moz-border-radius: 28px;
@@ -558,37 +572,17 @@ a.nivo-nextNav {
 }
 
 #video {
-  position: relative;
-  top: 45px;
+  margin-top: 30px;
   width: 400px;
   height: 225px;
   margin-right: auto;
   margin-left: auto;
-}
-
-#video2 {
-  position: relative;
-  top: 115px;
-  width: 400px;
-  height: 225px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#video2 iframe {
-  position: relative;
-  top: 40px;
 }
 
 #table {
   position: relative;
-  top: 55px;
+  top: 20px;
   margin-bottom: 50px;
-}
-
-table {
-  position: relative;
-  top: 40px;
 }
 
 #type th {
@@ -613,7 +607,7 @@ table {
   height: auto;
 }
 
-.content_container a:hover {
+.content_container a:hover{
   color: green;
 }
 
@@ -633,8 +627,4 @@ table {
 
 #footer p {
   padding: 0;
-}
-
-#bottom_part p {
-  width: 900px;
 }
