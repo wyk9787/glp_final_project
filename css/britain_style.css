@@ -12,7 +12,7 @@ body {
 }
 
 p {
-  padding: 0 0 10px 0;
+  padding: 0 0 0 0;
   line-height: 1.7em;
   text-shadow: 0px 1px 0px #FFF;
   font-size: 15px;
@@ -219,8 +219,10 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 #content {
-  width: 50%;
-  float: right;
+  margin-left: 14%;
+  margin-right: 6%;
+  width: auto;
+  /*float: right;*/
 }
 
 .content_item {
@@ -299,7 +301,7 @@ ul#menu li.current a, ul#menu li:hover a {
 }
 
 .form_settings p {
-  padding: 0 0 4px 0;
+  padding: 0 0 0 0;
 }
 
 .form_settings span {
@@ -392,6 +394,7 @@ ul#menu li.current a, ul#menu li:hover a {
   z-index: 10000;
   padding-top: 10px;
 }
+
 
 /*.navigation ul {
   margin-right: 60px;
@@ -556,14 +559,6 @@ a.nivo-nextNav {
   height: 40px;
 }
 
-#video {
-  margin-top: 30px;
-  width: 400px;
-  height: 225px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 #table {
   position: relative;
   top: 20px;
@@ -592,7 +587,7 @@ a.nivo-nextNav {
   height: auto;
 }
 
-.content_container a:hover{
+.content_container a:hover {
   color: green;
 }
 
@@ -612,4 +607,49 @@ a.nivo-nextNav {
 
 #footer p {
   padding: 0;
+}
+
+.image_left img {
+  width: 250px;
+}
+
+.image_right img {
+  width: 250px;
+}
+
+.image_right2 img {
+  width: 400px;
+}
+
+figcaption {
+  position: relative;
+  width: 250px;
+  height: auto;
+  font-size: 15px;
+  font-family: helvetica, sans-serif;
+  text-align: center;
+  margin: 5px 0 4px 0
+}
+
+figure {
+  width: 250px;
+  display: inline-block;
+  margin: 7px 7px 7px 7px;
+}
+
+.image_right figure {
+  float: right;
+}
+
+.image_left figure {
+  float: left;
+}
+
+.image_right2 figure {
+  float: right;
+  width: 400px;
+}
+
+.image_right2 figcaption {
+  width: 400px;
 }
