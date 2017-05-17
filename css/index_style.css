@@ -138,6 +138,7 @@ p {
 }
 
 .card-title {
+  position: relative;
   text-align: center;
   color: #333;
   margin: 0;
