@@ -215,7 +215,7 @@ ul#menu li.current a, ul#menu li:hover a {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   width: 100%;
   position: relative;
-  top: 15px;
+  top: 40px;
 }
 
 #content {
@@ -393,6 +393,7 @@ ul#menu li.current a, ul#menu li:hover a {
   padding-top: 10px;
 }
 
+
 /*.navigation ul {
   margin-right: 60px;
 }*/
@@ -557,17 +558,37 @@ a.nivo-nextNav {
 }
 
 #video {
-  margin-top: 30px;
+  position: relative;
+  top: 45px;
   width: 400px;
   height: 225px;
   margin-right: auto;
   margin-left: auto;
 }
 
+#video2 {
+  position: relative;
+  top: 115px;
+  width: 400px;
+  height: 225px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#video2 iframe {
+  position: relative;
+  top: 40px;
+}
+
 #table {
   position: relative;
-  top: 20px;
+  top: 55px;
   margin-bottom: 50px;
+}
+
+table {
+  position: relative;
+  top: 40px;
 }
 
 #type th {
@@ -592,7 +613,7 @@ a.nivo-nextNav {
   height: auto;
 }
 
-.content_container a:hover{
+.content_container a:hover {
   color: green;
 }
 
@@ -612,4 +633,8 @@ a.nivo-nextNav {
 
 #footer p {
   padding: 0;
+}
+
+#bottom_part p {
+  width: 900px;
 }
