@@ -1,120 +1,73 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comparison</title>
+    <meta name="description" content="comparison">
+    <meta name="keywords" content="comparison">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/comparison_style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+$(window).load(function() {
+  $('#slider').nivoSlider();
+});
+    </script> 
+  </head>
 
-<head>
-  <title>ARaynorDesign Template</title>
-  <meta name="description" content="free website template" />
-  <meta name="keywords" content="enter your keywords here" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
-  <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-  </script> 
-</head>
+  <body>
+    <div id="main">
 
-<body>
-  <div id="main">
-	
-	<div id="menubar">
-	  <div id="welcome">
-	    <h1><a href="#">Welcome To Stones</a></h1>
-	  </div><!--close welcome-->
-      <div id="menu_items">
-	    <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="ourwork.html">Our Work</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li class="current"><a href="contact.html">Contact Us</a></li>
+      <div class="navigation">
+        <ul class="navi">
+          <li id="myButton" class="navi"><a class="navi" href="index.html">Home</a></li>
+          <li id="myButton" class="navi"><a class="navi" href="comparison.html">Comparison</a></li>
+          <li id="myButton" class="navi"><a class="navi" href="china.html">China</a></li>
+          <li id="logo" class="navi"><a class="navi" href="index.html">Tea Culture</a></li>
+          <li id="myButton" class="navi"><a class="navi" href="russia.html">Russia</a></li>
+          <li id="myButton" class="navi"><a class="navi" href="japan.html">Japan</a></li>
+          <li id="myButton" class="navi"><a class="navi" href="britain.html">Britain</a></li>
         </ul>
-      </div><!--close menu-->
-    </div><!--close menubar-->	
-	
-	<div id="site_content">	
+      </div>
 
-	  <div id="banner_image">
-	    <div id="slider-wrapper">        
-          <div id="slider" class="nivoSlider">
-            <img src="images/home_1.jpg" alt="" />
-            <img src="images/home_2.jpg" alt="" />
-		  </div><!--close slider-->
-		</div><!--close slider_wrapper-->
-	  </div><!--close banner_image-->	
+      <div id="site_content"> 
 
-	  <div class="sidebar_container">       
-		<div class="sidebar">
-          <div class="sidebar_item">
-            <h2>New Website</h2>
-            <p>Welcome to our new website. Please have a look around, any feedback is much appreciated.</p>
-          </div><!--close sidebar_item--> 
-        </div><!--close sidebar-->     		
-		<div class="sidebar">
-          <div class="sidebar_item">
-            <h2>Latest Update</h2>
-            <h3>February 2013</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>         
-		  </div><!--close sidebar_item--> 
-        </div><!--close sidebar-->
-		<div class="sidebar">
-          <div class="sidebar_item">
-            <h3>January 2013</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>         
-		  </div><!--close sidebar_item--> 
-        </div><!--close sidebar-->  		
-      </div><!--close sidebar_container-->		   
-	   
-      <div id="content">
-        <div class="content_item">
-		  <div class="form_settings">
-            <h2>Contact Us</h2>
-            <p>A contact form requires some method of emailing the contents of the form to an email address. The most common way to do this is to use some kind of server script (PHP for example). I would be happy to send you the PHP code for the contact form for your chosen template, I charge £20.00GBP for this. Simply <a href="http://www.araynordesign.co.uk/contact.php">contact me</a> for more details.</p>
-			<p>&nbsp;</p>
-			<p><span>Name</span><input class="contact" type="text" name="your_name" value="" /></p>
-			<p><span>Email Address</span><input class="contact" type="text" name="your_email" value="" /></p>
-			<p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_message"></textarea></p>
-            <p style="padding: 10px 0 10px 0;">Please enter the answer to this simple maths question (to prevent spam)</p>
-			<p><span>Maths Question: 9 + 3 = ?</span><input type="text" name="user_answer" class="contact" /><input type="hidden" name="answer" value="4d76fe9775" /></p>
-            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="Send" /></p>
-          </div><!--close form_settings-->
-		</div><!--close content_item-->
-      </div><!--close content-->   
+        <img class="banner_img" src="images/comparison.jpg" alt="" />
 
-	  <div id="content_beige">
-	    <div class="content_beige_container_box">
-		  <h4>Latest Blog Post</h4>
-	      <p> Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.</p>
-		  <div class="readmore">
-		    <a href="#">Read more</a>
-		  </div><!--close readmore-->
-	    </div><!--close content_beige_container_box-->
-        <div class="content_beige_container_box">
-         <h4>Latest News</h4>
-	      <p> Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.</p>
-	      <div class="readmore">
-		    <a href="#">Read more</a>
-		  </div><!--close readmore-->
-	    </div><!--close content_beige_container_box-->
-        <div class="content_beige_container_boxl">
-		  <h4>Latest Projects</h4>
-	      <p> Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.</p>
-	      <div class="readmore">
-		    <a href="#">Read more</a>
-		  </div><!--close readmore-->	  
-	    </div><!--close content_beige_container_box1-->      
-	    <br style="clear:both"/>
-      </div><!--close content_beige--> 
-	</div><!--close site_content--> 
- 
-  </div><!--close main-->
-  
-  <div id="footer">
-	  <a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a> | <a href="http://fotogrph.com/">Images</a> | <a href="http://www.heartinternet.co.uk/web-hosting/">Web Hosting</a> | website template by <a href="http://www.araynordesign.co.uk">ARaynorDesign</a>
-  </div><!--close footer-->  	
-  
-</body>
+        <div id="content">
+          <div class="content_item">
+            <h1><div class="center">Comparison</div></h1>
+            <p>Although tea may be present in almost every culture, there are distinct differences in the way tea is prepared, valued, and used. The four countries chosen for this website were purposefully selected to elicit a comparison between eastern and western tea cultures. In the east, China can be compared to Japan, most fundamentally in their current strength of belief concerning tea’s modern day consumption. In the west, Great Britain can be compared to Russia, another great tea culture of the world. Most importantly; however, tea did originate from one source and the comparison between all four societies reveals interesting similarities despite the countries possessing fundamentally different cultures, traditions, and values.</p>
+            <div class="content_container_full">
+              <h2>Tea Culture of China and Japan</h2>
+              <p>Tea is a traditionally fundamental aspect of both ancient Chinese and Japanese cultures. Developed in China more than 4700 years ago, it spread to Japan around the 9th century. In ancient history, the Chinese people believed knowledge was required in order to fully appreciate tea’s subtle nuances and Japan continued this tradition by developing elaborate tea ceremonies. In the modern era; however, a integral difference may be observed between the younger generations of both cultures.</p>
+              <p>In China, the age of tea drinkers has steadily decreased, although tea remains the beverage of choice. The contemporary tea drinker; however, generally works in an office and consumes green, dark, or scented tea in order to maintain a healthy lifestyle. Taste takes preference over tradition, which may explain why the popularity of tea has not declined alongside the observance of traditional tea culture.</p>
+              <p>In Japan, an analysis of three generations provides an interesting comparison. Younger generations of Japanese people are consuming less tea alongside the same decreasing observation of traditional tea culture occurring simultaneously in China. For example, the oldest living generation is more likely to serve traditional hot green tea to a guest, regardless of the season, while the youngest living generation would choose a cold beverage like juice or Oolong tea to serve in the summer.</p>
+              <p>In both cultures, traditional tea culture is disappearing from everyday practice, but while tea remains popular in China, Japan’s younger generation appears to be slowly moving away from the traditional drink.</p> 
+            </div>
+            <div class="content_container_full">
+              <h2>Tea Culture of Great Britain and Russia</h2>
+              <p>British and Russian tea cultures are fundamentally similar in the sense they are both western countries granted access to tea through the silk road. Shared technology and a similarity between the social aspect of tea in each country further cement this relationship.  For example, its theorized that the British invented the Russian Samovar during the high industrial growth Britain experienced in the latter half of the 17th century.</p>
+              <p>Both Britain and Russia have more relaxed tea traditions than that of either China or Japan. In Britain, afternoon tea is the cultural tradition, although the practice has died out in the modern era, just as similar practices are diminishing in China and Japan. Russian tea traditions mimic Britain’s afternoon tea, but are much more relaxed, allowed to occur at any time or place.</p>
+              <p>Additionally, just as the people of Japan and China prefer green tea, black tea is the drink of choice in both Britain and Russia. The British take it with sugar and possibly milk or cream.  The Russians also sugar their tea, but use lemon instead of milk with the intention of further enhancing the flavor.</p>
+            </div>
+          </div>
+          <div class="content_container_full">
+            <h3>Conclusion</h3>
+            <p>The tea cultures of eastern countries and western countries are clearly connected, just as the general culture of China and Japan are more similar to each other than the cultures of Britain or Russia. There are fundamental similarities between China, Japan, and Great Britain; however.</p>
+            <p>In all three countries, the same basic process is used to make tea: a teapot with boiling water soaks the tea leaves and the whole mixture is poured into a cup. In Russia, a tea concentrate is poured into the cup first, followed by water boiled separately. Russia also deemphasizes the importance of ceremony more so than either China, Japan, and Britain.</p>
+            <p>The only conclusion from this analysis is while Britain and Japan can clearly trace the roots of their respective tea cultures back to China, Russia has developed an intriguing tea culture inspired by the west. A desire to westernize may have pushed the country to look at Britain, not China, thus creating a powerful tea culture uniquely different from the rest of the world.</p>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+        </a>
+        <p>Copyright © 2017 by Garrett Wang, Kohei Kotani and Kaity Moore.</p>
+        <p>Please check <a href="citation.html"><b><i>this</i></b></a> page for all the citations.</p>
+      </div>
+    </div>
+  </body>
 </html>

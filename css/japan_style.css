@@ -25,22 +25,18 @@ img {
   border: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #000;
-  text-shadow: 0px 1px 0px #FFF;
-  margin: 0 0 10px 0;
-}
-
 h1 {
   padding: 0.5em;
   border: 3px solid #ccc;
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+  margin: 1em 0;
 }
 
 h2 {
   position: relative;
   padding: .7em 0;
   font-size: 1.3em;
+  margin: 1em 0;
 }
 h2::before,
 h2::after {
@@ -65,6 +61,7 @@ h2::after {
 h3 {
   position: relative;
   padding: .25em 0 .5em .75em;
+  margin: 1em 0;
   border-left: 6px solid green;
 }
 
@@ -85,6 +82,7 @@ h4 {
   background: linear-gradient(-155deg, rgba(0, 0, 0, 0) 1.5em, #f6f6f6 0%);
   border-radius: 6px;
   font-size: 1.1em;
+  margin: 1em 0;
 }
 h4::after {
   position: absolute;
@@ -136,6 +134,11 @@ table {
   text-align: center;
 }
 
+.spaces {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 /* Navigaton bar starts from here */
 ul.navi {
   padding: 0;
@@ -163,13 +166,10 @@ a.navi {
     top: 0;
     text-align: center;
     width: 100%;
+    height: 80px;
     float: none;
     z-index: 10000;
-    height: 70px;
     padding-top: 10px;
-}
-.navigation ul {
-    margin-right: 60px;
 }
 
 #logo {
@@ -189,22 +189,7 @@ a.navi {
     cursor: pointer;
     color: rgb(251, 123, 80);
     font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 20px;
-    padding: 10px 15px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #2f6627;
-}
-
-#myButton:hover {
-    background-color: #5cbf2a;
-    -moz-border-radius: 28px;
-    -webkit-border-radius: 28px;
-    border: none;
-    display: inline-block;
-    cursor: pointer;
-    color: rgb(251, 123, 80);
-    font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 20px;
+    font-size: 28px;
     padding: 10px 15px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #2f6627;
@@ -293,13 +278,18 @@ table td {
 
 /* Button starts here */
 .button {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   z-index: 2;
   background-color: #333;
   border: 2px solid #333;
   color: #fff;
-  line-height: 50px;
-  padding: 0.5em;
+  line-height: 2.3em;
+  text-decoration: none;
+  width: 7em;
 }
 .button:hover {
   background-color: #fff;
@@ -359,7 +349,9 @@ table td {
 }
 
 .content_container {
+  position: relative;
   width: 440px;
+  height: 20em;
   padding: 5px;
   margin-right: 10px;
   float: left;
