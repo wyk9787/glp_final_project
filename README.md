@@ -4,7 +4,7 @@
 - Final Project: Global Tea Culture--Compare China, Japan, Russia and Great Britain tea culture
 
 ## Website
-- (https://grinnell-in-japan.com/glpfinalproject2017)
+- https://grinnell-in-japan.com/glpfinalproject2017
 
 ## Author
 - Garrett Wang
